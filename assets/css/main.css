@@ -1962,7 +1962,7 @@ input, select, textarea {
 			transition: opacity 0.25s ease-in-out;
 			margin-bottom: 0;
 			position: relative;
-			padding: 3.5em 2.5em 2.5em 2.5em;
+			padding: 3.5em 3em 2.5em 3.5em;
 			width: 100%;
 		}
 
@@ -2191,109 +2191,87 @@ input, select, textarea {
 		}
 
 		/*????????????????????????????????????????????????????????????????????????????????????????????????????????????????????*/
-		.lists-container::-webkit-scrollbar {
-			height: 2.4rem;
-		}
 		
-		.lists-container::-webkit-scrollbar-thumb {
-			background-color: #66a3c7;
-			border: 0.8rem solid #0079bf;
-			border-top-width: 0;
-		}
-		
-		.lists-container {
-			display: flex;
-			align-items: start;
-			padding: 0 1rem 1rem;
-			height: 500px;
-			width: 100%;
-
-		}
-		
-		.list {
-			flex: 0 0 27rem;
-			display: flex;
-			flex-direction: column;
-			background-color: #e2e4e6;
-			max-height: calc(100vh - 11.8rem);
-			border-radius: 0.3rem;
-			margin-right: 1rem;
-			width: 100%;
-			height: 500px;
+		.list-border{
 			border: 10px solid #fff;
-		}
-		
-		.list:last-of-type {
-			margin-right: 0;
-		}
-		
-		.list-title {
-			font-size: 1.4rem;
-			font-weight: 700;
-			color: #333;
-			padding: 1rem;
-		}
-		
-		.list-items {
-			flex: 1;
-			display: flex;
-			flex-direction: column;
-			align-content: start;
-			padding: 0 0.6rem 0.5rem;
-			overflow-y: auto;
-		}
-		
-		.list-items::-webkit-scrollbar {
-			width: 1.6rem;
-		}
-		
-		.list-items::-webkit-scrollbar-thumb {
-			background-color: #c4c9cc;
-			border-right: 0.6rem solid #e2e4e6;
-		}
-		
-		.list-items li {
-			font-size: 1.4rem;
-			font-weight: 400;
-			line-height: 1.3;
-			background-color: #fff;
-			padding: 0.65rem 0.6rem;
-			color: #4d4d4d;
-			border-bottom: 0.1rem solid #ccc;
-			border-radius: 0.3rem;
-			margin-bottom: 0.6rem;
-			word-wrap: break-word;
-			cursor: pointer;
-		}
-		
-		.list-items li:last-of-type {
-			margin-bottom: 0;
-		}
-		
-		.list-items li:hover {
-			background-color: #eee;
-		}
-		.list {
-			display: grid;
-			grid-template-rows: auto minmax(auto, 1fr) auto;
-		}
-	
-		.list-items {
-			display: grid;
-			grid-row-gap: 0.6rem;
-		}
-	
-		.logo,
-		.list,
-		.list-items li,
-		.boards-btn,
-		.board-info-bar,
-		.board-controls .btn,
-		.user-settings-btn {
-			margin: 0;
 		}
 
 		.full-width{
 			width: 100%;
 		}
 	
+		.seta-dir{
+			display: block;
+			position: absolute;
+			right: 0;
+			top: 50%;
+			margin-top: -1.375em;
+			width: 2.75em;
+			height: 2.75em;
+			background: #000;
+			background: rgba(0, 0, 0, 0.75);
+			color: #ffffff;
+			text-align: center;
+			line-height: 2.75em;
+			font-size: 1em;
+			z-index: 1;
+			-moz-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+			-webkit-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+			-ms-transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+			transition: width .15s ease-in-out, padding-right .15s ease-in-out;
+		}
+
+		.seta-esq{
+			display: block;
+			position: absolute;
+			left: 0;
+			top: 50%;
+			margin-top: -1.375em;
+			width: 2.75em;
+			height: 2.75em;
+			background: #000;
+			background: rgba(0, 0, 0, 0.75);
+			color: #ffffff;
+			text-align: center;
+			line-height: 2.75em;
+			font-size: 1em;
+			z-index: 1;
+			-moz-transition: width .15s ease-in-out, padding-left .15s ease-in-out;
+			-webkit-transition: width .15s ease-in-out, padding-left .15s ease-in-out;
+			-ms-transition: width .15s ease-in-out, padding-left .15s ease-in-out;
+			transition: width .15s ease-in-out, padding-left .15s ease-in-out;
+		}
+		
+
+		.seta-dir:hover{
+			width: 3em;
+			padding-right: 0.25em;
+			color: #fff !important;
+		}
+
+		.seta-esq:hover{
+			width: 3em;
+			padding-right: 0.25em;
+			color: #fff !important;
+		}
+
+		.to-do-header{
+			background-color: deepskyblue !important;
+			color: white;
+			text-align: center;
+			font-weight: bold;
+		}
+
+		.doing-header{
+			background-color: rgb(206, 194, 33) !important;
+			color: white;
+			text-align: center;
+			font-weight: bold;
+		}
+
+		.done-header{
+			background-color: rgb(48, 206, 16) !important;
+			color: white;
+			text-align: center;
+			font-weight: bold;
+		}
